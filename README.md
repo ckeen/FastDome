@@ -4,8 +4,7 @@ An open source 3d geodesic dome.
 
 For a 2V geodesic dome we'll need 3 types of vertices:
 
-5 point
-(https://github.com/tchartersazevedo/FastDome/blob/master/pics/fastdome-6.png)
+![5 point](https://github.com/tchartersazevedo/FastDome/blob/master/pics/fastdome-6.png)
 
 ## Indoor geodesic dome (70cm radius)
 
