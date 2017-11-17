@@ -1,8 +1,8 @@
 # FastDome
 
-FastDome is a set of 3D printed vertices to build a an open source 3d geodesic 2V dome using PVC tubes.
+FastDome is a set of 3D printed vertices to build an open source 3d geodesic 2V dome using PVC tubes.
 
-I've used 16cm (outer diameter) PVC tubes. The modeling was done using [OpenScad](http://www.openscad.org/) and the source can be found under at the `scad´ directory under a GPLv3 license. Use the SCAD file to fit the vertices any diamter tube.
+I've used 16cm (outer diameter) PVC tubes. The modeling was done using [OpenScad](http://www.openscad.org/) and is under a GPLv3 license. Use the SCAD file to fit the vertices any diameter tube.
 
 ![2V geodesic dome](https://github.com/tchartersazevedo/FastDome/blob/master/pics/IMG_20171117_121519.jpg)
 
