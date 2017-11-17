@@ -8,7 +8,10 @@ I've used 16cm (outer diameter) PVC tubes. The modeling was done using [OpenScad
 
 ## Indoor geodesic dome (70cm radius)
 
-For a 70cm radius we'll need 30 A=35cm tubes and 35 B=45cm tubes. The fractions of the diameter are given by 0.54653and 0.61803 respectively.
+(I'll put some math in a couple of days)
+For a 70cm radius we'll need 35cm tubes (30) and 45cm tubes (35). I'll put some math here in a couple of days (check the references below).
+
+Have fun!
 
 
 ## References
