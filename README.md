@@ -13,6 +13,7 @@ For a 70cm radius we'll need 35cm tubes (30) and 45cm tubes (35). I'll put some 
 ## Printing
 
 res.= 0.32mm
+
 infill= 20%
 
 
