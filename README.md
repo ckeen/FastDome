@@ -6,16 +6,6 @@ I've used 16cm (outer diameter) PVC tubes. The modeling was done using [OpenScad
 
 ![2V geodesic dome](https://github.com/tchartersazevedo/FastDome/blob/master/pics/IMG_20171117_121519.jpg)
 
-For a 2V geodesic dome we'll need 3 types of vertices:
-
-![6 point](https://github.com/tchartersazevedo/FastDome/blob/master/pics/fastdome-6.png)
-
-![5 point](https://github.com/tchartersazevedo/FastDome/blob/master/pics/fastdome-5.png)
-
-![4 point](https://github.com/tchartersazevedo/FastDome/blob/master/pics/fastdome-4.png)
-
-
-
 ## Indoor geodesic dome (70cm radius)
 
 For a 70cm radius we'll need 30 A=35cm tubes and 35 B=45cm tubes. The fractions of the diameter are given by 0.54653and 0.61803 respectively.
