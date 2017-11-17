@@ -16,7 +16,6 @@ res.= 0.32mm
 
 infill= 20%
 
-
 Have fun!
 
 ## References
