@@ -19,7 +19,6 @@ infill= 20%
 
 Have fun!
 
-
 ## References
 
 * [Geodesic Dome Notes and Calculator](https://simplydifferently.org/Geodesic_Dome_Notes?page=3#1V/L1%202/3%20Icosahedron%20Dome)
