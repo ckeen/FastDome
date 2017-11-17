@@ -111,8 +111,9 @@ module cap(ro){
 
 }    
 
-translate([0,0,2])
-cap(ro);
+
+//translate([0,0,2])
+//cap(ro);
 hub(5,5,ri,15.86);
 //hub(6,6,ri,18.00);
 //hub(6,4,ri,18.00);
