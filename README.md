@@ -12,6 +12,16 @@ For a 70cm radius we'll need 35cm tubes (30) and 45cm tubes (35). I'll put some 
 
 ## 3D Printing
 
+For a 2V geodesic dome we will need to print a total of 26 vertices 
+
+Number | Vertex type
+------ | -------------
+10     | 4
+6      | 5
+10     | 6
+
+### Printer settings
+
 res.= 0.32mm
 
 infill= 20%
