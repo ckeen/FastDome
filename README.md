@@ -22,12 +22,11 @@ Number | Vertex type
 
 ### Printer settings
 
-res.= 0.32mm
+res. = 0.32mm
 
-infill= 20%
-
-Have fun!
+infill = 20%
 
 ## References
 * [Geodesic Dome Notes and Calculator](https://simplydifferently.org/Geodesic_Dome_Notes?page=3#1V/L1%202/3%20Icosahedron%20Dome)
 
+Have fun!
