@@ -112,9 +112,34 @@ module cap(ro){
 }    
 
 
-//translate([0,0,2])
-//cap(ro);
-hub(5,5,ri,15.86);
+
+module stack(ri,alpha){
+    rm=1.5*ri;
+    height=ri*sin(alpha);
+    rotate([0,0,360/5+360/10])
+    hub(5,5,ri,15.86);
+    
+    translate([0,0,1.4*rm])
+    hub(5,5,ri,15.86);
+
+    // translate([0,0,2*1.4*rm])
+    // rotate([0,0,360/5+360/10])
+    // hub(5,5,ri,15.86);
+
+    translate([0,0,height+ri])
+    difference(){
+	poly_cylinder(h=ri/2,r=ro+.51,center=true);
+	m=5;
+	for(i=[0:m-1]){
+	    rotate([0,0,360*i/m])
+	    cube([3*rm,h,3*ri],center=true);}
+	poly_cylinder(h=3*ri+1,r=ro,center=true);}
+}
+
+rotate([0,180,0])
+stack(ri,15.86);
+
+//Uncomment this 
+//hub(5,5,ri,15.86);
 //hub(6,6,ri,18.00);
 //hub(6,4,ri,18.00);
-
