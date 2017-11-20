@@ -54,7 +54,8 @@ module poly_cylinder(h,r,center=false){
 
 $fn=2*16;
 phi=(1+sqrt(5))/2;
-ri=13/2+.1;
+//ri=13/2+.1;
+ri=13.5/2+.1;
 ro=16/2+.1;
 h=2*1.2;
 
@@ -119,23 +120,25 @@ module stack(ri,alpha){
     rotate([0,0,360/5+360/10])
     hub(5,5,ri,15.86);
     
-    translate([0,0,1.4*rm])
+    translate([0,0,1.25*rm+1.5*h])
     hub(5,5,ri,15.86);
 
     // translate([0,0,2*1.4*rm])
     // rotate([0,0,360/5+360/10])
     // hub(5,5,ri,15.86);
-
-    translate([0,0,height+ri])
-    difference(){
-	poly_cylinder(h=ri/2,r=ro+.51,center=true);
-	m=5;
-	for(i=[0:m-1]){
-	    rotate([0,0,360*i/m])
-	    cube([3*rm,h,3*ri],center=true);}
-	poly_cylinder(h=3*ri+1,r=ro,center=true);}
-}
-
+    
+    //    translate([0,0,height+ri])
+    //    poly_cylinder(h=ri/2,r=ro+.51,center=true);
+    m=10;
+    rotate([0,0,360/5+360/10])
+    for(i=[0:m-1]){
+	rotate([0,0,360*i/m])
+	translate([0,rm,rm])
+	
+	cylinder(h=2*h,r=1,center=true);
+	
+}}
+	
 rotate([0,180,0])
 stack(ri,15.86);
 
