@@ -54,8 +54,7 @@ module poly_cylinder(h,r,center=false){
 
 $fn=2*16;
 phi=(1+sqrt(5))/2;
-//ri=13/2+.1;
-ri=13.5/2+.1;
+ri=13/2+.1; //PLA
 ro=16/2+.1;
 h=2*1.2;
 
@@ -93,7 +92,7 @@ module hub(n=5,m=5,ri=13.2/2,alpha=15.86,h=h){
 	poly_cylinder(h=10*ri,r=ro,center=true);
 	
 	
-	// Allow a nail to ground it to the floor
+	// Allow a nail to ground
 	if(m==n-2){
 	    translate([1.5*ri,0,height])
 	    rotate([0,90,0]){
@@ -101,48 +100,8 @@ module hub(n=5,m=5,ri=13.2/2,alpha=15.86,h=h){
     }}
     
     
-module cap(ro){
-    translate([0,0,ro/2+1.5*h-.1])
-    cylinder(h=h/2,r=ro+h/4,center=true);
-    translate([0,0,ro/2+h])
-    difference(){
-	cylinder(h=h,r=ro-.51,center=true);
-	translate([0,0,-ro/2]){
-	    cylinder(h=ro,r=ro-h,center=true);}}
-
-}    
-
-
-
-module stack(ri,alpha){
-    rm=1.5*ri;
-    height=ri*sin(alpha);
-    rotate([0,0,360/5+360/10])
-    hub(5,5,ri,15.86);
-    
-    translate([0,0,1.25*rm+1.5*h])
-    hub(5,5,ri,15.86);
-
-    // translate([0,0,2*1.4*rm])
-    // rotate([0,0,360/5+360/10])
-    // hub(5,5,ri,15.86);
-    
-    //    translate([0,0,height+ri])
-    //    poly_cylinder(h=ri/2,r=ro+.51,center=true);
-    m=10;
-    rotate([0,0,360/5+360/10])
-    for(i=[0:m-1]){
-	rotate([0,0,360*i/m])
-	translate([0,rm,rm])
-	
-	cylinder(h=2*h,r=1,center=true);
-	
-}}
-	
-rotate([0,180,0])
-stack(ri,15.86);
 
 //Uncomment this 
 //hub(5,5,ri,15.86);
-//hub(6,6,ri,18.00);
+hub(6,6,ri,18.00);
 //hub(6,4,ri,18.00);
